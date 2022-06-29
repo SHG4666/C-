@@ -27,12 +27,12 @@ void display() {
 	cout << "display()" << endl;
 }
 //display_int
-void display(int a) {
+void display(int a,double b) {
 	cout << "display(int a)" <<a<< endl;
 }
 
 //display_int
-void display(double a) {
+void display(double a,long b) {
 	cout << "display(double a)" <<a<< endl;
 }
 //display_long
@@ -47,6 +47,8 @@ int main() {
 //	func();
 	display();
 	display(10);
+	display(10, 10.0);
+	display(10.0, 10);
 	display(10L);
 	display(10.0);
 }
